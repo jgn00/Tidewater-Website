@@ -57,7 +57,20 @@ The navigation, text, images, buttons and page sections adjusted correctly acros
 
 ## Issues and Corrections
 
-During testing, page elements were checked for overflowing content, broken links, incorrectly sized images, layout problems and inconsistent styling. Any layout and responsive design issues identified during development were corrected using CSS and media queries.
+During cross-browser testing, the website initially displayed a **404 File Not Found** error in Mozilla Firefox when accessing the site through `localhost:8000`. At the same time, the website appeared to work correctly in Google Chrome and Safari.
+
+### Cause
+
+Investigation showed that an older Python HTTP server process was still running on port `8000`. This prevented a new local server from starting from the current Tidewater Swim Academy project directory. As a result, Firefox was accessing the server running from the incorrect location and could not locate the website files.
+
+### Correction
+
+The existing Python server process using port `8000` was identified and terminated. A new Python HTTP server was then started from the correct `Tidewater-Website` project directory.
+
+After restarting the server, the website loaded correctly in Firefox. The pages were retested in Firefox, Chrome and Safari to confirm that the navigation, styling, images, JavaScript functionality and responsive layouts worked consistently across all three browsers.
+
+No further major cross-browser compatibility issues were identified.
+
 
 ## Final Result
 
