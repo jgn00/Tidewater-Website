@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Programs &amp; Fees | Tidewater Swim Academy</title>
+    <meta
+      name="description"
+      content="Learn-to-swim classes, adult beginner groups, private coaching and performance squads at Tidewater Swim Academy, with a full weekly timetable and 2026 fees."
+    />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span>Tidewater<small>Swim Academy</small></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" aria-current="page">Programs</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li class="nav-cta"><a href="contact.html">Book a trial</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ===== Page banner ===== -->
+      <section class="page-banner">
+        <div class="wrapper">
+          <p class="eyebrow">Programs</p>
+          <h1>Coaching for every stage of the swimmer.</h1>
+          <p class="lead page-banner__lead">
+            Six programs, one progression. Swimmers move up when milestones are met &mdash;
+            never on the calendar alone.
+          </p>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li>Programs</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== Filterable program grid ===== -->
+      <section class="section">
+        <div class="wrapper">
+          <div class="section-head reveal">
+            <p class="eyebrow">What&rsquo;s offered</p>
+            <h2>Choose a program</h2>
+            <p class="lead">Filter by who the program is for.</p>
+          </div>
+
+          <div class="filter-bar reveal" role="group" aria-label="Filter programs by swimmer">
+            <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">
+              All programs
+            </button>
+            <button class="filter-btn" type="button" data-filter="children" aria-pressed="false">
+              Children
+            </button>
+            <button class="filter-btn" type="button" data-filter="adults" aria-pressed="false">
+              Adults
+            </button>
+            <button class="filter-btn" type="button" data-filter="competitive" aria-pressed="false">
+              Competitive
+            </button>
+          </div>
+          <p class="table-note" id="filter-count" role="status">Showing 6 of 6 programs.</p>
+
+          <div class="columns-3 program-grid">
+            <article class="card reveal" data-audience="children">
+              <span class="badge">Ages 4&ndash;6</span>
+              <h3 class="program-card__title">Little Tides</h3>
+              <span class="price-tag">KSh 6,500 <span>/ month</span></span>
+              <p>
+                Water confidence, submerging, floating and first kicks in shallow water with
+                two coaches per lane.
+              </p>
+              <ul class="tick-list">
+                <li>2 sessions weekly · 30 minutes</li>
+                <li>Maximum 6 swimmers</li>
+              </ul>
+            </article>
+
+            <article class="card reveal" data-audience="children" data-delay="90">
+              <span class="badge">Ages 7&ndash;12</span>
+              <h3 class="program-card__title">Learn to Swim</h3>
+              <span class="price-tag">KSh 7,800 <span>/ month</span></span>
+              <p>
+                A structured five-level pathway covering all four strokes, turns and 100&nbsp;m
+                continuous swimming.
+              </p>
+              <ul class="tick-list">
+                <li>2 sessions weekly · 45 minutes</li>
+                <li>Milestone report every 6 weeks</li>
+              </ul>
+            </article>
+
+            <article class="card reveal" data-audience="adults" data-delay="180">
+              <span class="badge">Adults</span>
+              <h3 class="program-card__title">Adult Beginners</h3>
+              <span class="price-tag">KSh 8,400 <span>/ month</span></span>
+              <p>
+                For adults who never learned, or who are anxious in deep water. Quiet lanes,
+                slow build, no spectators.
+              </p>
+              <ul class="tick-list">
+                <li>2 sessions weekly · 60 minutes</li>
+                <li>Maximum 5 swimmers</li>
+              </ul>
+            </article>
+
+            <article class="card reveal" data-audience="adults">
+              <span class="badge">Adults</span>
+              <h3 class="program-card__title">Stroke Clinic</h3>
+              <span class="price-tag">KSh 9,600 <span>/ month</span></span>
+              <p>
+                Technique repair for adults who can already swim: breathing rhythm, catch,
+                body position and open-water pacing.
+              </p>
+              <ul class="tick-list">
+                <li>Weekly session · 60 minutes</li>
+                <li>Video review once a month</li>
+              </ul>
+            </article>
+
+            <article class="card reveal" data-audience="competitive" data-delay="90">
+              <span class="badge">Squad</span>
+              <h3 class="program-card__title">Performance Squad</h3>
+              <span class="price-tag">KSh 14,500 <span>/ month</span></span>
+              <p>
+                Periodised training for club and school competitors, with pace sets, dryland
+                work and full meet preparation.
+              </p>
+              <ul class="tick-list">
+                <li>5 sessions weekly · 90 minutes</li>
+                <li>Entry by coach assessment</li>
+              </ul>
+            </article>
+
+            <article class="card reveal" data-audience="competitive" data-delay="180">
+              <span class="badge">One to one</span>
+              <h3 class="program-card__title">Private Coaching</h3>
+              <span class="price-tag">KSh 2,800 <span>/ session</span></span>
+              <p>
+                A single coach, a single swimmer and one goal &mdash; a stubborn stroke fault,
+                a start, a turn, or a time to beat.
+              </p>
+              <ul class="tick-list">
+                <li>Booked per session · 45 minutes</li>
+                <li>Available to all members</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Timetable: data table ===== -->
+      <section class="section section--tint">
+        <div class="wrapper">
+          <div class="sidebar-layout">
+            <div class="sidebar-layout__main reveal">
+              <p class="eyebrow">Timetable</p>
+              <h2>Weekly session schedule</h2>
+              <p>
+                All times are East Africa Time. Lane space is confirmed at booking; squad
+                sessions run through school holidays.
+              </p>
+
+              <div class="table-scroll">
+                <table class="data-table">
+                  <caption>
+                    Tidewater weekly timetable &mdash; term 3, 2026
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Program</th>
+                      <th scope="col">Days</th>
+                      <th scope="col">Time</th>
+                      <th scope="col">Lane</th>
+                      <th scope="col">Monthly fee</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Little Tides</th>
+                      <td>Mon &amp; Wed</td>
+                      <td>4:00 &ndash; 4:30 pm</td>
+                      <td>1</td>
+                      <td>KSh 6,500</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Learn to Swim</th>
+                      <td>Tue &amp; Thu</td>
+                      <td>4:45 &ndash; 5:30 pm</td>
+                      <td>2 &amp; 3</td>
+                      <td>KSh 7,800</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Learn to Swim</th>
+                      <td>Saturday</td>
+                      <td>8:00 &ndash; 8:45 am</td>
+                      <td>2 &amp; 3</td>
+                      <td>KSh 7,800</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Adult Beginners</th>
+                      <td>Tue &amp; Thu</td>
+                      <td>6:00 &ndash; 7:00 am</td>
+                      <td>4</td>
+                      <td>KSh 8,400</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Stroke Clinic</th>
+                      <td>Saturday</td>
+                      <td>9:30 &ndash; 10:30 am</td>
+                      <td>4</td>
+                      <td>KSh 9,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Performance Squad</th>
+                      <td>Mon &ndash; Fri</td>
+                      <td>5:30 &ndash; 7:00 pm</td>
+                      <td>5 &amp; 6</td>
+                      <td>KSh 14,500</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Private Coaching</th>
+                      <td>By arrangement</td>
+                      <td>Flexible</td>
+                      <td>Any</td>
+                      <td>KSh 2,800 / session</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="table-note">
+                Sibling discount of 10% applies from the second swimmer. Fees include pool
+                entry, equipment and milestone reporting.
+              </p>
+            </div>
+
+            <aside class="sidebar-layout__aside reveal" data-delay="120">
+              <figure class="frame aside-media">
+                <img
+                  src="images/underwater.jpg"
+                  alt="Adult swimmer streamlining underwater with sunlight falling through turquoise water"
+                  width="1200"
+                  height="1504"
+                  loading="lazy"
+                />
+              </figure>
+              <div class="panel">
+                <h3>What to bring</h3>
+                <ul class="tick-list">
+                  <li>Swimsuit and towel</li>
+                  <li>Goggles (loan pairs available)</li>
+                  <li>Silicone cap for squad sessions</li>
+                  <li>Water bottle</li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ accordion ===== -->
+      <section class="section">
+        <div class="wrapper">
+          <div class="sidebar-layout">
+            <div class="sidebar-layout__main reveal">
+              <p class="eyebrow">Questions</p>
+              <h2>Before you book</h2>
+              <div class="accordion">
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button
+                      class="accordion__trigger"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-1"
+                      id="faq-1-trigger"
+                    >
+                      Does my child need to swim before joining?
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-1" role="region" aria-labelledby="faq-1-trigger">
+                    <p>
+                      No. Little Tides and Level 1 of Learn to Swim both start with swimmers
+                      who have never entered a pool. The assessment simply tells us which lane
+                      to place them in.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button
+                      class="accordion__trigger"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-2"
+                      id="faq-2-trigger"
+                    >
+                      How do swimmers move to the next level?
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-2" role="region" aria-labelledby="faq-2-trigger">
+                    <p>
+                      Each level has written milestones. Coaches assess every six weeks and
+                      send a short report; swimmers move up as soon as the milestones are met,
+                      whatever the term dates say.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button
+                      class="accordion__trigger"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-3"
+                      id="faq-3-trigger"
+                    >
+                      Can I pause or transfer my membership?
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-3" role="region" aria-labelledby="faq-3-trigger">
+                    <p>
+                      Memberships can be paused once per term with two weeks&rsquo; notice, and
+                      transferred to another family member at any time at no cost.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="accordion__item">
+                  <h3 class="accordion__heading">
+                    <button
+                      class="accordion__trigger"
+                      type="button"
+                      aria-expanded="false"
+                      aria-controls="faq-4"
+                      id="faq-4-trigger"
+                    >
+                      Are the coaches qualified to supervise children?
+                    </button>
+                  </h3>
+                  <div class="accordion__panel" id="faq-4" role="region" aria-labelledby="faq-4-trigger">
+                    <p>
+                      Every coach holds a recognised swim teaching qualification, current
+                      lifesaving certification and first aid training, and a lifeguard is on
+                      deck for all sessions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="sidebar-layout__aside reveal" data-delay="120">
+              <div class="panel">
+                <h3>Not sure which program fits?</h3>
+                <p class="muted">
+                  Tell us the swimmer&rsquo;s age and what they can already do. We will
+                  recommend a lane before you pay anything.
+                </p>
+                <a class="btn btn--primary" href="contact.html">Ask a coach</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="wrapper">
+          <h2>Trial any program free of charge.</h2>
+          <p class="lead cta-band__lead">
+            One session, no commitment, coach feedback the same evening.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--ghost" href="contact.html">Book a free trial</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="grid">
+          <div>
+            <a class="brand" href="index.html">
+              <span class="brand__mark" aria-hidden="true"></span>
+              <span>Tidewater<small>Swim Academy</small></span>
+            </a>
+            <p>Coaching swimmers of every age on the Kenyan coast since 2009.</p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Programs &amp; fees</a></li>
+              <li><a href="about.html">Our story</a></li>
+              <li><a href="contact.html">Contact &amp; booking</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Visit</h3>
+            <ul>
+              <li>14 Lighthouse Road</li>
+              <li>Nyali, Mombasa</li>
+              <li><a href="tel:+254700123456">+254 700 123 456</a></li>
+              <li><a href="mailto:hello@tidewaterswim.co.ke">hello@tidewaterswim.co.ke</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year">2026</span> Tidewater Swim Academy. All rights reserved.</p>
+          <p>Certified coaches · Lifeguard on deck at all times</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact &amp; Booking | Tidewater Swim Academy</title>
+    <meta
+      name="description"
+      content="Book a free trial swim session at Tidewater Swim Academy in Nyali, Mombasa. Opening hours, location map, phone, email and the online booking form."
+    />
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Inter+Tight:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span>Tidewater<small>Swim Academy</small></span>
+        </a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Toggle navigation menu"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="primary-nav" aria-label="Main">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Programs</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li class="nav-cta"><a href="contact.html" aria-current="page">Book a trial</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-banner">
+        <div class="wrapper">
+          <p class="eyebrow">Contact &amp; booking</p>
+          <h1>Book a free trial session.</h1>
+          <p class="lead page-banner__lead">
+            Tell us about the swimmer and we will reply within one business day with two
+            session options.
+          </p>
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li>Contact</li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ===== Form + details ===== -->
+      <section class="section">
+        <div class="wrapper">
+          <div class="sidebar-layout">
+            <!-- Booking form -->
+            <div class="sidebar-layout__main reveal">
+              <p class="eyebrow">Booking request</p>
+              <h2>Swimmer details</h2>
+
+              <form class="booking-form" id="booking-form" novalidate>
+                <fieldset>
+                  <legend>Who should we contact?</legend>
+                  <div class="field-row">
+                    <div class="field">
+                      <label for="fullName">Full name <span class="req">*</span></label>
+                      <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        autocomplete="name"
+                        required
+                      />
+                      <span class="error" aria-live="polite"></span>
+                    </div>
+                    <div class="field">
+                      <label for="email">Email address <span class="req">*</span></label>
+                      <input type="email" id="email" name="email" autocomplete="email" required />
+                      <span class="error" aria-live="polite"></span>
+                    </div>
+                  </div>
+
+                  <div class="field-row">
+                    <div class="field">
+                      <label for="phone">Phone number <span class="req">*</span></label>
+                      <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+                      <span class="hint">Include the country code, e.g. +254 700 123 456.</span>
+                      <span class="error" aria-live="polite"></span>
+                    </div>
+                    <div class="field">
+                      <label for="swimmerAge">Swimmer&rsquo;s age <span class="req">*</span></label>
+                      <input type="number" id="swimmerAge" name="swimmerAge" min="3" max="90" required />
+                      <span class="error" aria-live="polite"></span>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend>Which program?</legend>
+                  <div class="field">
+                    <label for="program">Program of interest <span class="req">*</span></label>
+                    <select id="program" name="program" required>
+                      <option value="">Please choose a program</option>
+                      <option value="little-tides">Little Tides (ages 4&ndash;6)</option>
+                      <option value="learn-to-swim">Learn to Swim (ages 7&ndash;12)</option>
+                      <option value="adult-beginners">Adult Beginners</option>
+                      <option value="stroke-clinic">Stroke Clinic</option>
+                      <option value="performance">Performance Squad</option>
+                      <option value="private">Private Coaching</option>
+                    </select>
+                    <span class="error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="field">
+                    <span class="field-label" id="experience-label">Current swimming experience</span>
+                    <div class="choice-group" role="radiogroup" aria-labelledby="experience-label">
+                      <label class="choice">
+                        <input type="radio" name="experience" value="none" checked />
+                        Cannot swim yet
+                      </label>
+                      <label class="choice">
+                        <input type="radio" name="experience" value="basic" />
+                        Can manage a length
+                      </label>
+                      <label class="choice">
+                        <input type="radio" name="experience" value="competitive" />
+                        Competitive
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label for="preferredDay">Preferred trial day</label>
+                    <select id="preferredDay" name="preferredDay">
+                      <option value="weekday-morning">Weekday morning</option>
+                      <option value="weekday-evening" selected>Weekday evening</option>
+                      <option value="saturday">Saturday morning</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label for="message">Anything the coach should know?</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Medical notes, water anxiety, goals, previous lessons…"
+                    ></textarea>
+                    <span class="error" aria-live="polite"></span>
+                  </div>
+
+                  <div class="field">
+                    <label class="choice">
+                      <input type="checkbox" name="updates" value="yes" />
+                      Email me the term timetable and pool closures
+                    </label>
+                  </div>
+                </fieldset>
+
+                <button class="btn btn--primary" type="submit">Request my free trial</button>
+                <p class="form-status" id="form-status" role="status" tabindex="-1" hidden></p>
+              </form>
+            </div>
+
+            <!-- Details sidebar -->
+            <aside class="sidebar-layout__aside reveal" data-delay="130">
+              <div class="panel panel--spaced">
+                <h3>Reach us directly</h3>
+                <dl>
+                  <dt>Phone</dt>
+                  <dd><a href="tel:+254700123456">+254 700 123 456</a></dd>
+                  <dt>Email</dt>
+                  <dd><a href="mailto:hello@tidewaterswim.co.ke">hello@tidewaterswim.co.ke</a></dd>
+                  <dt>Address</dt>
+                  <dd>14 Lighthouse Road, Nyali, Mombasa, Kenya</dd>
+                </dl>
+              </div>
+
+              <div class="table-scroll">
+                <table class="data-table data-table--compact">
+                  <caption>
+                    Opening hours
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Day</th>
+                      <th scope="col">Pool open</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Mon &ndash; Fri</th>
+                      <td>5:30 am &ndash; 8:30 pm</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Saturday</th>
+                      <td>7:00 am &ndash; 4:00 pm</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Sunday</th>
+                      <td>9:00 am &ndash; 1:00 pm</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Public holidays</th>
+                      <td>Closed</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Map ===== -->
+      <section class="section section--tint">
+        <div class="wrapper">
+          <div class="section-head reveal">
+            <p class="eyebrow">Find us</p>
+            <h2>Two minutes from Nyali Bridge</h2>
+            <p class="lead">
+              Free parking on site, and the entrance is step-free from the road to the pool
+              deck.
+            </p>
+          </div>
+          <div class="reveal">
+            <iframe
+              class="map-embed"
+              title="Map showing Tidewater Swim Academy in Nyali, Mombasa"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=39.66%2C-4.06%2C39.72%2C-4.02&amp;layer=mapnik"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrapper">
+        <div class="grid">
+          <div>
+            <a class="brand" href="index.html">
+              <span class="brand__mark" aria-hidden="true"></span>
+              <span>Tidewater<small>Swim Academy</small></span>
+            </a>
+            <p>Coaching swimmers of every age on the Kenyan coast since 2009.</p>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Programs &amp; fees</a></li>
+              <li><a href="about.html">Our story</a></li>
+              <li><a href="contact.html">Contact &amp; booking</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Visit</h3>
+            <ul>
+              <li>14 Lighthouse Road</li>
+              <li>Nyali, Mombasa</li>
+              <li><a href="tel:+254700123456">+254 700 123 456</a></li>
+              <li><a href="mailto:hello@tidewaterswim.co.ke">hello@tidewaterswim.co.ke</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="year">2026</span> Tidewater Swim Academy. All rights reserved.</p>
+          <p>Certified coaches · Lifeguard on deck at all times</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" aria-label="Back to top">&uarr;</button>
+    <script src="main.js"></script>
+  </body>
+</html>

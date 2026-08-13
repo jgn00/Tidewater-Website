@@ -1,0 +1,15 @@
+# Local operating-system and editor files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary files and local server output
+*.log
+*.local
+coverage/
