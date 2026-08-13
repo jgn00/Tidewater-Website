@@ -2,6 +2,10 @@
 
 A four-page swimming-academy website built with plain HTML, CSS and vanilla JavaScript.
 
+## GitHub Repository
+
+Repository: https://github.com/jgn00/Tidewater-Website
+
 ## Pages
 
 - `index.html` — Home
